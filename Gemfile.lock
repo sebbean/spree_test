@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/spree/spree.git
+  remote: git://github.com/radar/spree.git
   revision: 721545ffac1b57384e54b1cc741d9e7b050a18c9
   branch: 2-1-stable
   specs:
@@ -51,7 +51,7 @@ GIT
       spree_core (= 2.1.4.beta)
 
 GIT
-  remote: git://github.com/spree/spree_auth_devise.git
+  remote: git://github.com/radar/spree_auth_devise.git
   revision: 9417dd85f99e205e0b28b00cb93ef0137171a59f
   branch: 2-1-stable
   specs:
@@ -64,7 +64,7 @@ GIT
       spree_frontend (~> 2.1.0)
 
 GIT
-  remote: git://github.com/spree/spree_gateway.git
+  remote: git://github.com/radar/spree_gateway.git
   revision: 04c51e6bd24e1ea70a548dd12934db98032235ec
   branch: 2-1-stable
   specs:
