@@ -1,7 +1,9 @@
 development:
   adapter: postgresql
-  database: spree_development_edge
+  database: spree_development_two_dot_one
 
 test:
   adapter: postgresql
-  database: spree_test_edge
+  database: spree_test_two_dot_one
+  username: postgres
+  min_messages: warning
