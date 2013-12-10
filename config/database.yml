@@ -5,8 +5,10 @@
 #   gem 'sqlite3'
 development:
   adapter: postgresql
-  database: spree_development_edge
+  database: spree_development_one_three
 
 test:
   adapter: postgresql
-  database: spree_test_edge
+  database: spree_test_one_three
+  username: postgres
+  min_messages: warning
