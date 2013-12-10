@@ -65,7 +65,7 @@ GIT
 
 GIT
   remote: git://github.com/radar/spree_gateway.git
-  revision: 04c51e6bd24e1ea70a548dd12934db98032235ec
+  revision: 99928b0f0e1c6c98045da0e1ad12d6ca8fe56895
   branch: 2-1-stable
   specs:
     spree_gateway (2.1.0.beta)
