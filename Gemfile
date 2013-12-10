@@ -12,3 +12,10 @@ version = '2-1-stable'
 gem 'spree', :github => 'spree/spree', :branch => version
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => version
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => version
+
+group :development, :test do
+  gem 'pry'
+  gem 'rspec-rails', '~> 2.1'
+  gem 'capybara', '~> 2.1'
+  gem 'launchy'
+end

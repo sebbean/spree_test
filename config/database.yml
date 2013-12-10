@@ -1,3 +1,7 @@
 development:
   adapter: postgresql
   database: spree_development_edge
+
+test:
+  adapter: postgresql
+  database: spree_test_edge
