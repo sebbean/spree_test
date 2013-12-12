@@ -11,7 +11,7 @@ gem 'coffee-rails', '~> 4.0'
 gem 'jquery-rails'
 
 version = '2-1-stable'
-gem 'spree', :path => "~/Projects/gems/spree"
+gem 'spree', github: 'radar/spree', branch: version
 gem 'spree_auth_devise', :github => 'radar/spree_auth_devise', :branch => version
 gem 'spree_gateway', :github => 'radar/spree_gateway', :branch => version
 
