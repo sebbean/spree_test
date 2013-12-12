@@ -1,7 +1,27 @@
 GIT
-  remote: git://github.com/radar/spree.git
-  revision: bee7a088eb79934844d4fb2a609b6e262ed025a2
+  remote: git://github.com/radar/spree_auth_devise.git
+  revision: 8bef2bf2108da1fdb207aa8f20529049e2c5398f
   branch: 2-1-stable
+  specs:
+    spree_auth_devise (2.1.0)
+      cancan (~> 1.6.7)
+      devise (~> 3.0.1)
+      devise-encryptable (= 0.1.2)
+      spree_backend (~> 2.1.0)
+      spree_core (~> 2.1.0)
+      spree_frontend (~> 2.1.0)
+
+GIT
+  remote: git://github.com/radar/spree_gateway.git
+  revision: 99928b0f0e1c6c98045da0e1ad12d6ca8fe56895
+  branch: 2-1-stable
+  specs:
+    spree_gateway (2.1.0.beta)
+      savon (~> 1.2)
+      spree_core (~> 2.1)
+
+PATH
+  remote: ~/Projects/gems/spree
   specs:
     spree (2.1.4.beta)
       spree_api (= 2.1.4.beta)
@@ -49,28 +69,6 @@ GIT
       stringex (~> 1.5.1)
     spree_sample (2.1.4.beta)
       spree_core (= 2.1.4.beta)
-
-GIT
-  remote: git://github.com/radar/spree_auth_devise.git
-  revision: 8bef2bf2108da1fdb207aa8f20529049e2c5398f
-  branch: 2-1-stable
-  specs:
-    spree_auth_devise (2.1.0)
-      cancan (~> 1.6.7)
-      devise (~> 3.0.1)
-      devise-encryptable (= 0.1.2)
-      spree_backend (~> 2.1.0)
-      spree_core (~> 2.1.0)
-      spree_frontend (~> 2.1.0)
-
-GIT
-  remote: git://github.com/radar/spree_gateway.git
-  revision: 99928b0f0e1c6c98045da0e1ad12d6ca8fe56895
-  branch: 2-1-stable
-  specs:
-    spree_gateway (2.1.0.beta)
-      savon (~> 1.2)
-      spree_core (~> 2.1)
 
 GEM
   remote: https://rubygems.org/
