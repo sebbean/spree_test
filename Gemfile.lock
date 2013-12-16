@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/radar/spree.git
-  revision: 83855c222a262155546c4cdefe380da489660b92
+  revision: cf6a956d936fda5477100c18e2084e38b7117d7d
   branch: 2-1-stable
   specs:
     spree (2.1.4.beta)
@@ -215,7 +215,7 @@ GEM
       i18n (~> 0.6.4)
     multi_json (1.8.2)
     multi_xml (0.5.5)
-    nokogiri (1.6.0)
+    nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     nori (1.1.5)
     orm_adapter (0.5.0)
