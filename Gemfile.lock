@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/radar/spree.git
-  revision: 0acd732b690b7c073bf3486d5f6ee490f94ecd3d
+  revision: 83855c222a262155546c4cdefe380da489660b92
   branch: 2-1-stable
   specs:
     spree (2.1.4.beta)
@@ -52,12 +52,12 @@ GIT
 
 GIT
   remote: git://github.com/radar/spree_auth_devise.git
-  revision: 8bef2bf2108da1fdb207aa8f20529049e2c5398f
+  revision: 45a1e7aa5b235e42db52a754d7e827caf4e0d406
   branch: 2-1-stable
   specs:
     spree_auth_devise (2.1.0)
       cancan (~> 1.6.7)
-      devise (~> 3.0.1)
+      devise (~> 3.2.2)
       devise-encryptable (= 0.1.2)
       spree_backend (~> 2.1.0)
       spree_core (~> 2.1.0)
@@ -71,6 +71,17 @@ GIT
     spree_gateway (2.1.0.beta)
       savon (~> 1.2)
       spree_core (~> 2.1)
+
+GIT
+  remote: git://github.com/spree/spree_fancy.git
+  revision: d1cfa2e59d42180a6a4b349719c1ee4996dbce4e
+  branch: 2-1-stable
+  specs:
+    spree_fancy (2.1.0)
+      compass-rails (= 1.1.2)
+      deface (~> 1.0.0rc3)
+      jquery-ui-rails
+      spree_core (~> 2.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -135,6 +146,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    chunky_png (1.2.9)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.3)
@@ -148,14 +160,21 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     colorize (0.6.0)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    compass-rails (1.1.2)
+      compass (>= 0.12.2)
     deface (1.0.0)
       colorize (>= 0.5.8)
       nokogiri (~> 1.6.0)
       rails (>= 3.1)
-    devise (3.0.4)
+    devise (3.2.2)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
       warden (~> 1.2.3)
     devise-encryptable (0.1.2)
       devise (>= 2.1.0)
@@ -163,6 +182,7 @@ GEM
     erubis (2.7.0)
     execjs (2.0.2)
     ffaker (1.22.1)
+    fssm (0.2.10)
     gyoku (0.4.6)
       builder (>= 2.1.2)
     highline (1.6.20)
@@ -321,4 +341,5 @@ DEPENDENCIES
   sass-rails (~> 4.0)
   spree!
   spree_auth_devise!
+  spree_fancy!
   spree_gateway!
