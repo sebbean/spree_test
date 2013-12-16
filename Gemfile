@@ -18,4 +18,6 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.1'
   gem 'capybara', '~> 2.1'
   gem 'launchy'
+  gem 'quiet_assets'
+  gem 'puma'
 end

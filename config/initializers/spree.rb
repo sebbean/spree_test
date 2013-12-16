@@ -12,3 +12,22 @@ Spree.config do |config|
 end
 
 Spree.user_class = "Spree::LegacyUser"
+
+$QUERY_COUNT = 0
+
+ActiveSupport::Notifications.subscribe("sql.active_record") do |_, _, _, _, details|
+  $QUERY_COUNT += 1
+end
+
+module Ryan
+  class LogSubscriber < ActiveSupport::LogSubscriber
+    def process_action(event)
+      info("QUERY COUNT: #{$QUERY_COUNT}")
+      $QUERY_COUNT = 0
+    end
+  end
+end
+
+Ryan::LogSubscriber.attach_to :action_controller
+
+Rails.application.config.i18n.default_locale = :en
