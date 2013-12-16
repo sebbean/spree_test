@@ -9,7 +9,7 @@ Spree.config do |config|
   # Example:
   # Uncomment to override the default site name.
   # config.site_name = "Spree Demo Site"
-  config.currency = "RUB"
+  config.currency = "USD"
 end
 
 Spree.user_class = "Spree::LegacyUser"
