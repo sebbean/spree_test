@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131209010732) do
+ActiveRecord::Schema.define(version: 20131218023573) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -230,6 +230,11 @@ ActiveRecord::Schema.define(version: 20131209010732) do
   add_index "spree_orders", ["completed_at"], name: "index_spree_orders_on_completed_at", using: :btree
   add_index "spree_orders", ["number"], name: "index_spree_orders_on_number", using: :btree
   add_index "spree_orders", ["user_id"], name: "index_spree_orders_on_user_id", using: :btree
+
+  create_table "spree_orders_promotions", id: false, force: true do |t|
+    t.integer "order_id"
+    t.integer "promotion_id"
+  end
 
   create_table "spree_payment_methods", force: true do |t|
     t.string   "type"
@@ -455,7 +460,7 @@ ActiveRecord::Schema.define(version: 20131209010732) do
     t.datetime "updated_at"
   end
 
-  add_index "spree_shipping_method_categories", ["shipping_category_id"], name: "index_spree_shipping_method_categories_on_shipping_category_id", using: :btree
+  add_index "spree_shipping_method_categories", ["shipping_category_id", "shipping_method_id"], name: "unique_spree_shipping_method_categories", unique: true, using: :btree
   add_index "spree_shipping_method_categories", ["shipping_method_id"], name: "index_spree_shipping_method_categories_on_shipping_method_id", using: :btree
 
   create_table "spree_shipping_methods", force: true do |t|

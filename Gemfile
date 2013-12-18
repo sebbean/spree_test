@@ -14,10 +14,14 @@ gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => versio
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => version
 
 group :development, :test do
-  gem 'pry'
   gem 'rspec-rails', '~> 2.1'
   gem 'capybara', '~> 2.1'
   gem 'launchy'
   gem 'quiet_assets'
-  gem 'puma'
 end
+
+gem 'puma'
+gem 'dalli'
+gem 'rack-cache'
+gem 'kgio'
+gem 'pry'
