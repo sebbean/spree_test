@@ -7,3 +7,7 @@ test:
   database: spree_test_edge
   username: postgres
   min_messages: warning
+
+production:
+  adapter: postgresql
+  database: spree_development_edge

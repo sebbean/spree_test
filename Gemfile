@@ -19,3 +19,5 @@ group :development, :test do
   gem 'capybara', '~> 2.1'
   gem 'launchy'
 end
+
+gem 'puma'
