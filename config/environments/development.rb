@@ -26,4 +26,6 @@ SpreeTest::Application.configure do
   config.assets.debug = true
 
   config.eager_load = false
+
+  config.cache_store = :dalli_store, "localhost", { :namespace => 'spree_dev', :expires_in => 1.day, :compress => true }
 end
