@@ -1,4 +1,5 @@
-set :stage, :production
+set :stage, :caching
+set :branch :caching
 
 # Simple Role Syntax
 # ==================
@@ -39,4 +40,4 @@ role :db,  %w{deploy@spree.ryanbigg.com}
 #   }
 # setting per server overrides global ssh_options
 
-# fetch(:default_env).merge!(rails_env: :production)
+fetch(:default_env).merge!(rails_env: :production)
