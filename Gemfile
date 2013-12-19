@@ -18,7 +18,9 @@ group :development, :test do
   gem 'capybara', '~> 2.1'
   gem 'launchy'
   gem 'quiet_assets'
-  gem 'capistrano'
+  gem 'capistrano', '~> 3.0'
+  gem 'capistrano-bundler', '1.1.1'
+  gem 'capistrano-rails', '1.1.0'
 end
 
 gem 'puma'
