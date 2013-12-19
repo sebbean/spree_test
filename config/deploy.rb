@@ -1,5 +1,11 @@
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'spree'
+set :repo_url, 'git://github.com/radar/spree_test'
+set :deploy_to, '/data/spree'
+set :log_level, :debug
+set :linked_files, %w{config/database.yml}
+set :linked_dirs, %w{tmp/sockets log config/puma public/spree}
+set :sockets_path, Pathname.new("#{fetch(:deploy_to)}/shared/tmp/sockets/")
+set :environment, "production"
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
