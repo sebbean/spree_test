@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/spree/spree.git
+  remote: git://github.com/radar/spree.git
   revision: b88d043d7ffdecc111576e1eef317e93cb9c4504
   branch: master
   specs:
@@ -51,7 +51,7 @@ GIT
       spree_core (= 2.2.0.beta)
 
 GIT
-  remote: git://github.com/spree/spree_auth_devise.git
+  remote: git://github.com/radar/spree_auth_devise.git
   revision: b6feb085876c62be6c8d3f8cbe0f91e90129bdbe
   branch: master
   specs:
