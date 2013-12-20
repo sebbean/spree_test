@@ -1,4 +1,1 @@
-require 'devise/version'
-if Devise::VERSION >= "3.2"
-  Devise.secret_key = "a32bf755f25b3170a964e977a2917d538ff0bdd5b1cf2f42dc13f9e0e270a631c618fc16a8dea0bf1c7394adf746d52f72c3"
-end
+Devise.secret_key = "4fd245d6bd8348103cb96b74ab59572af1a748f6ae101410758add7da09ec6df86577fb6f4b3df7099125f7a1e3fc919d0f4"
