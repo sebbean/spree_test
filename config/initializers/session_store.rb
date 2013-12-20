@@ -1,6 +1,7 @@
 # Be sure to restart your server when you modify this file.
 
-SpreeTest::Application.config.session_store :cookie_store, key: '_spree_test_session'
+SpreeTest::Application.config.session_store :redis_store
+
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
