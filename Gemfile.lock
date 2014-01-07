@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/radar/spree.git
-  revision: cf6a956d936fda5477100c18e2084e38b7117d7d
+  revision: e67983d05c683902da2c158097be39cd8e882013
   branch: 2-1-stable
   specs:
     spree (2.1.4.beta)
@@ -52,7 +52,7 @@ GIT
 
 GIT
   remote: git://github.com/radar/spree_auth_devise.git
-  revision: 45a1e7aa5b235e42db52a754d7e827caf4e0d406
+  revision: a7b47806f332e196af1b6ae170836e7d5346ff36
   branch: 2-1-stable
   specs:
     spree_auth_devise (2.1.0)
@@ -71,17 +71,6 @@ GIT
     spree_gateway (2.1.0.beta)
       savon (~> 1.2)
       spree_core (~> 2.1)
-
-GIT
-  remote: git://github.com/spree/spree_fancy.git
-  revision: d1cfa2e59d42180a6a4b349719c1ee4996dbce4e
-  branch: 2-1-stable
-  specs:
-    spree_fancy (2.1.0)
-      compass-rails (= 1.1.2)
-      deface (~> 1.0.0rc3)
-      jquery-ui-rails
-      spree_core (~> 2.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -129,8 +118,8 @@ GEM
       nokogiri (>= 1.4.0)
     arel (4.0.1)
     atomic (1.1.14)
-    awesome_nested_set (3.0.0.rc.2)
-      activerecord (~> 4.0.0)
+    awesome_nested_set (3.0.0.rc.3)
+      activerecord (>= 4.0.0, < 5)
     aws-sdk (1.27.0)
       json (~> 1.4)
       nokogiri (>= 1.4.4)
@@ -146,7 +135,6 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    chunky_png (1.2.9)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.3)
@@ -160,12 +148,6 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     colorize (0.6.0)
-    compass (0.12.2)
-      chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.1)
-    compass-rails (1.1.2)
-      compass (>= 0.12.2)
     deface (1.0.0)
       colorize (>= 0.5.8)
       nokogiri (~> 1.6.0)
@@ -182,7 +164,6 @@ GEM
     erubis (2.7.0)
     execjs (2.0.2)
     ffaker (1.22.1)
-    fssm (0.2.10)
     gyoku (0.4.6)
       builder (>= 2.1.2)
     highline (1.6.20)
@@ -341,5 +322,4 @@ DEPENDENCIES
   sass-rails (~> 4.0)
   spree!
   spree_auth_devise!
-  spree_fancy!
   spree_gateway!

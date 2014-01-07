@@ -26,8 +26,5 @@ SpreeTest::Application.configure do
   config.assets.debug = true
 
   config.eager_load = false
-  
-  require 'middleware/turbo_dev'
-  config.middleware.insert 0, Middleware::TurboDev
 end
 

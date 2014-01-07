@@ -14,7 +14,7 @@ version = '2-1-stable'
 gem 'spree', github: 'radar/spree', branch: version
 gem 'spree_auth_devise', :github => 'radar/spree_auth_devise', :branch => version
 gem 'spree_gateway', :github => 'radar/spree_gateway', :branch => version
-gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => version
+# gem 'spree_fancy', :github => 'spree/spree_fancy', :branch => version
 
 group :development, :test do
   gem 'pry'
