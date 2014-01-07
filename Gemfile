@@ -24,7 +24,7 @@ group :development, :test do
 end
 
 gem 'puma'
-gem 'redis-rails'
+gem 'dalli'
 gem 'kgio'
 gem 'pry'
 gem 'spree_sidekiq', :path => "~/Projects/gems/spree_sidekiq"
