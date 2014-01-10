@@ -1,5 +1,5 @@
 set :stage, :caching
-set :branch :caching
+set :branch, :caching
 
 # Simple Role Syntax
 # ==================
