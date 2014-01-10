@@ -27,4 +27,4 @@ gem 'puma'
 gem 'dalli'
 gem 'kgio'
 gem 'pry'
-gem 'spree_sidekiq', :path => "~/Projects/gems/spree_sidekiq"
+gem 'connection_pool'

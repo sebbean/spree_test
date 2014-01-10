@@ -66,3 +66,6 @@ SpreeTest::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
   config.eager_load = true
 end
+
+config.cache_store = :dalli_store, 'localhost',
+  { :namespace => 'Spree', :expires_in => 1.day, :compress => true, :pool_size => 10 }
