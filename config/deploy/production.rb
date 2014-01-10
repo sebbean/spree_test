@@ -1,4 +1,4 @@
-set :stage, :caching
+set :stage, :production
 set :branch, :caching
 
 # Simple Role Syntax
