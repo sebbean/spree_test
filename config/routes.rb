@@ -1,4 +1,5 @@
 SpreeTest::Application.routes.draw do
+  get '/mu-a51e03bc-c9791f2d-59bf6e50-827621b0', :to => "blitz#index"
 
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
