@@ -6,9 +6,9 @@ set :branch, :caching
 # Supports bulk-adding hosts to roles, the primary
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
-role :app, %w{deploy@spree.ryanbigg.com}
-role :web, %w{deploy@spree.ryanbigg.com}
-role :db,  %w{deploy@spree.ryanbigg.com}
+role :app, %w{deploy@162.243.250.133}
+role :web, %w{deploy@162.243.250.133}
+role :db,  %w{deploy@162.243.250.133}
 
 # Extended Server Syntax
 # ======================

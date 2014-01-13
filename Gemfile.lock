@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/radar/spree.git
-  revision: 3f6b015455bdb8007d9ef451129eda3141bdce04
+  revision: c81af75d4793aec109d74b7be9419aa52d20f4d9
   branch: caching
   specs:
     spree (2.2.0.beta)
