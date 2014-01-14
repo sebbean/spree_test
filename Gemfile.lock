@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/radar/spree.git
-  revision: ee073aa3628591e74119cf5bd5e8915f42c8bfbe
+  revision: fd09c0fe1885f03afea49f2327caa0aec5690682
   branch: caching
   specs:
     spree (2.2.0.beta)
@@ -52,7 +52,7 @@ GIT
 
 GIT
   remote: git://github.com/radar/spree_auth_devise.git
-  revision: fd2551b94c4e5c0168f85d7f4dbc08c600bb7968
+  revision: 9d14cedd253622f77f6e26b601ee954904e0619f
   branch: caching
   specs:
     spree_auth_devise (2.2.0)
