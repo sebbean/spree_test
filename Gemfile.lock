@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/radar/spree.git
-  revision: 47cb57d70b676fe53a712f66a06c8bee50bf0ddc
+  revision: 1f0d74342d99b3dcf4c6ecfb2b462d3464f1af54
   branch: master
   specs:
     spree (2.2.0.beta)
@@ -190,7 +190,7 @@ GEM
     jquery-ui-rails (4.0.5)
       railties (>= 3.1.0)
     json (1.8.1)
-    kaminari (0.15.0)
+    kaminari (0.15.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     launchy (2.4.2)
