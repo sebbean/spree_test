@@ -9,7 +9,7 @@ gem 'coffee-rails', '~> 4.0'
 gem 'jquery-rails'
 
 version = 'master'
-gem 'spree', :github => 'radar/spree', :branch => 'caching-demo'
+gem 'spree', :github => 'radar/spree', :branch => version
 gem 'spree_auth_devise', :github => 'radar/spree_auth_devise', :branch => version
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => version
 
