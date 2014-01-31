@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131219061205) do
+ActiveRecord::Schema.define(version: 20140131053933) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20131219061205) do
   end
 
   add_index "spree_adjustments", ["adjustable_id"], name: "index_adjustments_on_order_id", using: :btree
+  add_index "spree_adjustments", ["source_type", "source_id"], name: "index_spree_adjustments_on_source_type_and_source_id", using: :btree
 
   create_table "spree_assets", force: true do |t|
     t.integer  "viewable_id"
@@ -277,10 +278,13 @@ ActiveRecord::Schema.define(version: 20131219061205) do
   add_index "spree_preferences", ["key"], name: "index_spree_preferences_on_key", unique: true, using: :btree
 
   create_table "spree_prices", force: true do |t|
-    t.integer "variant_id",                         null: false
-    t.decimal "amount",     precision: 8, scale: 2
-    t.string  "currency"
+    t.integer  "variant_id",                         null: false
+    t.decimal  "amount",     precision: 8, scale: 2
+    t.string   "currency"
+    t.datetime "deleted_at"
   end
+
+  add_index "spree_prices", ["variant_id", "currency"], name: "index_spree_prices_on_variant_id_and_currency", using: :btree
 
   create_table "spree_product_option_types", force: true do |t|
     t.integer  "position"
@@ -306,7 +310,7 @@ ActiveRecord::Schema.define(version: 20131219061205) do
     t.text     "description"
     t.datetime "available_on"
     t.datetime "deleted_at"
-    t.string   "permalink"
+    t.string   "slug"
     t.text     "meta_description"
     t.string   "meta_keywords"
     t.integer  "tax_category_id"
@@ -318,8 +322,8 @@ ActiveRecord::Schema.define(version: 20131219061205) do
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on", using: :btree
   add_index "spree_products", ["deleted_at"], name: "index_spree_products_on_deleted_at", using: :btree
   add_index "spree_products", ["name"], name: "index_spree_products_on_name", using: :btree
-  add_index "spree_products", ["permalink"], name: "index_spree_products_on_permalink", using: :btree
-  add_index "spree_products", ["permalink"], name: "permalink_idx_unique", unique: true, using: :btree
+  add_index "spree_products", ["slug"], name: "index_spree_products_on_slug", using: :btree
+  add_index "spree_products", ["slug"], name: "permalink_idx_unique", unique: true, using: :btree
 
   create_table "spree_products_promotion_rules", id: false, force: true do |t|
     t.integer "product_id"
@@ -345,13 +349,13 @@ ActiveRecord::Schema.define(version: 20131219061205) do
   end
 
   create_table "spree_promotion_actions", force: true do |t|
-    t.integer "activator_id"
+    t.integer "promotion_id"
     t.integer "position"
     t.string  "type"
   end
 
   create_table "spree_promotion_rules", force: true do |t|
-    t.integer  "activator_id"
+    t.integer  "promotion_id"
     t.integer  "user_id"
     t.integer  "product_group_id"
     t.string   "type"
