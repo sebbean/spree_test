@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require spree/ember/frontend
 //= require_tree .
