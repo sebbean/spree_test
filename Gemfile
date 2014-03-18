@@ -10,8 +10,9 @@ gem 'coffee-rails', '~> 4.0'
 gem 'jquery-rails'
 
 version = '2-2-stable'
-gem 'spree', :github => 'spree/spree', :branch => version
+gem 'spree', :github => 'radar/spree', :branch => version
 gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => version
+gem 'spree_i18n', :github => "spree/spree_i18n", :branch => version
 
 group :development, :test do
   gem 'pry'
