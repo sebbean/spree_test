@@ -1,14 +1,14 @@
 set :stage, :production
-set :branch, :caching
+set :branch, "2-2-stable"
 
 # Simple Role Syntax
 # ==================
 # Supports bulk-adding hosts to roles, the primary
 # server in each group is considered to be the first
 # unless any hosts have the primary property set.
-role :app, %w{deploy@162.243.250.133}
-role :web, %w{deploy@162.243.250.133}
-role :db,  %w{deploy@162.243.250.133}
+role :app, %w{deploy@107.170.99.247}
+role :web, %w{deploy@107.170.99.247}
+role :db,  %w{deploy@107.170.99.247}
 
 # Extended Server Syntax
 # ======================
