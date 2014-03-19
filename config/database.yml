@@ -1,13 +1,13 @@
 development:
   adapter: postgresql
-  database: spree_development_two_dot_two
+  database: spree_development_two_dot_three
 
 test:
   adapter: postgresql
-  database: spree_test_two_dot_two
+  database: spree_test_two_dot_three
   username: postgres
   min_messages: warning
 
 production:
   adapter: postgresql
-  database: spree_production_two_dot_two
+  database: spree_production_two_dot_three
