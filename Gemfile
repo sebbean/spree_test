@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.4'
 gem 'pg'
 
 gem 'sass-rails',   '~> 4.0'
 gem 'coffee-rails', '~> 4.0'
+gem 'sprockets', '2.11.0'
 
 gem 'jquery-rails'
 
@@ -12,6 +13,7 @@ version = 'master'
 gem 'spree', :github => 'radar/spree', :branch => version
 gem 'spree_auth_devise', :github => 'radar/spree_auth_devise', :branch => version
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => version
+gem 'spree_print_invoice', :github => 'spree/spree_print_invoice', :branch => version
 
 group :development, :test do
   gem 'pry'
