@@ -14,6 +14,7 @@ gem 'spree', :github => 'radar/spree', :branch => version
 gem 'spree_auth_devise', :github => 'radar/spree_auth_devise', :branch => version
 gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => version
 gem 'spree_print_invoice', :github => 'spree/spree_print_invoice', :branch => version
+gem 'prawn', '1.0.0'
 
 group :development, :test do
   gem 'pry'
