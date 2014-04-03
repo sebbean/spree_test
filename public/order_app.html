@@ -1,0 +1,15 @@
+<html ng-app='order'>
+  <head>
+    <script src='http://localhost:3000/assets/angular.js'></script>
+    <script src='http://localhost:3000/assets/angular-route.js'></script>
+    <script src='order_app.js'></script>
+  </head>
+  <body>
+    <div ng-controller='DetailsCtrl'>
+      stuff goes here {{order.number}}
+    </div>
+    <script>
+      var order_number = "R123456789"
+    </script>
+  </body>
+</html>

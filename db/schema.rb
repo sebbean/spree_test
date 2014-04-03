@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140303143491) do
+ActiveRecord::Schema.define(version: 20140403013149) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -67,6 +67,8 @@ ActiveRecord::Schema.define(version: 20140303143491) do
     t.string   "type",                    limit: 75
     t.datetime "attachment_updated_at"
     t.text     "alt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "spree_assets", ["viewable_id"], name: "index_assets_on_viewable_id", using: :btree
@@ -78,6 +80,7 @@ ActiveRecord::Schema.define(version: 20140303143491) do
     t.string   "calculable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "preferences"
   end
 
   add_index "spree_calculators", ["calculable_id", "calculable_type"], name: "index_spree_calculators_on_calculable_id_and_calculable_type", using: :btree
@@ -115,7 +118,12 @@ ActiveRecord::Schema.define(version: 20140303143491) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
+    t.integer  "user_id"
+    t.integer  "payment_method_id"
   end
+
+  add_index "spree_credit_cards", ["payment_method_id"], name: "index_spree_credit_cards_on_payment_method_id", using: :btree
+  add_index "spree_credit_cards", ["user_id"], name: "index_spree_credit_cards_on_user_id", using: :btree
 
   create_table "spree_gateways", force: true do |t|
     t.string   "type"
@@ -127,6 +135,7 @@ ActiveRecord::Schema.define(version: 20140303143491) do
     t.boolean  "test_mode",   default: true
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "preferences"
   end
 
   create_table "spree_inventory_units", force: true do |t|
@@ -268,6 +277,7 @@ ActiveRecord::Schema.define(version: 20140303143491) do
     t.datetime "updated_at"
     t.string   "display_on"
     t.boolean  "auto_capture"
+    t.text     "preferences"
   end
 
   add_index "spree_payment_methods", ["id", "type"], name: "index_spree_payment_methods_on_id_and_type", using: :btree
@@ -295,7 +305,6 @@ ActiveRecord::Schema.define(version: 20140303143491) do
   create_table "spree_preferences", force: true do |t|
     t.text     "value"
     t.string   "key"
-    t.string   "value_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -390,6 +399,7 @@ ActiveRecord::Schema.define(version: 20140303143491) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "code"
+    t.text     "preferences"
   end
 
   add_index "spree_promotion_rules", ["product_group_id"], name: "index_promotion_rules_on_product_group_id", using: :btree
@@ -601,6 +611,23 @@ ActiveRecord::Schema.define(version: 20140303143491) do
   add_index "spree_stock_transfers", ["destination_location_id"], name: "index_spree_stock_transfers_on_destination_location_id", using: :btree
   add_index "spree_stock_transfers", ["number"], name: "index_spree_stock_transfers_on_number", using: :btree
   add_index "spree_stock_transfers", ["source_location_id"], name: "index_spree_stock_transfers_on_source_location_id", using: :btree
+
+  create_table "spree_stores", force: true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.text     "meta_description"
+    t.text     "meta_keywords"
+    t.string   "seo_title"
+    t.string   "mail_from_address"
+    t.string   "default_currency"
+    t.string   "code"
+    t.boolean  "default",           default: false, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "spree_stores", ["code"], name: "index_spree_stores_on_code", using: :btree
+  add_index "spree_stores", ["default"], name: "index_spree_stores_on_default", using: :btree
 
   create_table "spree_tax_categories", force: true do |t|
     t.string   "name"

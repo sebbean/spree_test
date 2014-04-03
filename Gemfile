@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.0.3'
+gem 'rails', '4.0.4'
 gem 'pg'
 
 gem 'sass-rails',   '~> 4.0'
@@ -8,12 +8,9 @@ gem 'coffee-rails', '~> 4.0'
 
 gem 'jquery-rails'
 
-version = '2-2-stable'
-gem 'spree_core', github: 'spree/spree', branch: version
-gem 'spree_api', github: 'spree/spree', branch: version
-gem 'spree_sample', github: 'spree/spree', branch: version
-# gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-2-stable'
-gem 'spree_ember_frontend', :path => "~/Projects/spree_ember"
+version = 'ember'
+gem 'spree', github: 'spree/spree', branch: version
+gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: 'master'
 gem 'ember-rails', github: 'emberjs/ember-rails'
 
 group :development, :test do
