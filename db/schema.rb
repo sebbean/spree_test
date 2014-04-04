@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140325025042) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
     t.string   "lastname"
@@ -719,8 +716,8 @@ ActiveRecord::Schema.define(version: 20140325025042) do
     t.boolean  "is_master",                               default: false
     t.integer  "product_id"
     t.decimal  "cost_price",      precision: 8, scale: 2
-    t.integer  "position"
     t.string   "cost_currency"
+    t.integer  "position"
     t.boolean  "track_inventory",                         default: true
     t.integer  "tax_category_id"
     t.datetime "updated_at"
