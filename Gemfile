@@ -25,3 +25,7 @@ end
 
 gem 'puma'
 gem 'thin'
+
+group :production do
+  gem 'rails_12factor'
+end
