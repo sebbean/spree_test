@@ -13,7 +13,7 @@ GIT
       railties (>= 3.1)
 
 GIT
-  remote: git://github.com/spree/spree.git
+  remote: git://github.com/radar/spree.git
   revision: 73e70ee2105862bf92ace9ed2d23d808d3e63e2d
   branch: ember-variant-picker
   specs:

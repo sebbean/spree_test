@@ -9,7 +9,7 @@ gem 'coffee-rails', '~> 4.0'
 gem 'jquery-rails'
 
 version = 'ember-variant-picker'
-gem 'spree', github: 'spree/spree', branch: version
+gem 'spree', github: 'radar/spree', branch: version
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: 'master'
 gem 'ember-rails', github: 'emberjs/ember-rails'
 
