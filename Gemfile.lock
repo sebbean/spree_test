@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: git://github.com/radar/spree.git
-  revision: 73e70ee2105862bf92ace9ed2d23d808d3e63e2d
+  revision: 447979629c4d5470942ff05d633db7c68a8c8e9a
   branch: ember-variant-picker
   specs:
     spree (2.3.0.beta)
