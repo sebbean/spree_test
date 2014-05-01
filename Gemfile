@@ -9,8 +9,8 @@ gem 'coffee-rails', '~> 4.0'
 gem 'jquery-rails'
 
 version = 'ember'
-gem 'spree', github: 'radar/spree', branch: version
-gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: 'master'
+gem 'spree', github: 'radar/spree', branch: 'ember-cleanup'
+gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: 'ember'
 gem 'ember-rails', github: 'emberjs/ember-rails'
 
 group :development, :test do
