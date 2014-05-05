@@ -13,3 +13,9 @@ Spree.config do |config|
 end
 
 Spree.user_class = "Spree::LegacyUser"
+
+Spree::Hub::Config[:hub_store_id] = "536707c269702d79b9f90000"
+Spree::Hub::Config[:hub_token] = "b93f6e969355a2a1e18c8528316b51626de78193182154b9"
+Spree::Hub::Config[:enable_auto_push] = true
+
+HttpLog.options[:log_headers]   = true
