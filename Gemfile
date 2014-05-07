@@ -26,3 +26,5 @@ end
 
 gem 'puma'
 gem 'thin'
+
+gem 'rails_12factor'
