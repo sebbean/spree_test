@@ -54,7 +54,7 @@ GIT
       spree_core (= 2.2.2.beta)
 
 GIT
-  remote: git://github.com/spree/spree_auth_devise.git
+  remote: git://github.com/radar/spree_auth_devise.git
   revision: 95819fbb23fa2a2d7daa069de08718d63c6b57c3
   branch: 2-2-stable
   specs:
