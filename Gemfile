@@ -12,6 +12,8 @@ version = 'bootstrap'
 gem 'spree', github: 'radar/spree', branch: version
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: version
 gem 'ember-rails', github: 'emberjs/ember-rails'
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'pry'

@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: git://github.com/radar/spree.git
-  revision: 1965c856b95e21b4561418d749e790fbd67b3ae8
+  revision: f2a3a5215e4357a543bbf6261ee6bd6ab418c542
   branch: bootstrap
   specs:
     spree (2.3.0.beta)
@@ -72,7 +72,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_auth_devise.git
-  revision: a876f78f116c4186d3d72ceadcd876e90bfa4fef
+  revision: 95f92d80ca52beae3efb6b464662b7d6182169e5
   branch: bootstrap
   specs:
     spree_auth_devise (2.2.0)
@@ -234,7 +234,7 @@ GEM
       money (~> 6.1.0.beta1)
     money (6.1.1)
       i18n (~> 0.6.4)
-    multi_json (1.9.3)
+    multi_json (1.10.0)
     multi_xml (0.5.5)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -359,12 +359,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   capistrano (~> 3.0)
   capistrano-bundler (= 1.1.1)
   capistrano-rails (= 1.1.0)
   capybara (~> 2.1)
   coffee-rails (~> 4.0)
   ember-rails!
+  font-awesome-rails
   jquery-rails
   launchy
   pg
